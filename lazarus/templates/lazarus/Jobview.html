@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+
+
+
+{% block content %}
+<div class="container my-5">
+  <div class="card shadow">
+    <div class="card-body">
+      <h3 class="card-title text-primary">{{ ViewedJob.title }}</h3>
+      <p class="card-text">{{ ViewedJob.description }}</p>
+      <h5 class="text-success">Salary: {{ ViewedJob.salary }}</h5>
+<img src="{{ request.user.avatar.url }}"/>
+    </div>
+  </div>
+</div>
+{% endblock %}

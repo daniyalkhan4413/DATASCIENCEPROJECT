@@ -45,7 +45,7 @@ class JobPosting(models.Model):
 
     required_skills = models.ManyToManyField(Skill, blank=True)
 
-    description = models.TextField(max_length=500,null=True)
+    description = models.TextField(max_length=2000,null=True)
 
     appliedusers = models.ManyToManyField(User)
 
